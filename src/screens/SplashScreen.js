@@ -21,7 +21,7 @@ const SplashScreen = ({ navigation }) => {
                 <Animatable.Image
                     animation="bounceIn"
                     duraton="1500"
-                source={ require('../images/logo_tg.png')}
+                source={ require('../images/logoctu.png')}
                 style={styles.logo}
                 resizeMode='stretch'/>
             </View>
