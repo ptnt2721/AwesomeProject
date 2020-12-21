@@ -123,7 +123,7 @@ const SignInScreen = ({ navigation }) => {
                 </TouchableOpacity>
                 <View style= { styles.button}>
                     <TouchableOpacity style={styles.signIn}
-                        onPress={() => navigation.navigate('Browse')}>
+                        onPress={() => navigation.navigate('Test')}>
                         <LinearGradient style={styles.signIn}
                                         colors={['#295097', '#295097']}>
                             <Text style= { [styles.textSign, {color:'#fff'}]}>Đăng nhập</Text>
