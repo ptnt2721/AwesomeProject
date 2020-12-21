@@ -5,6 +5,7 @@
  * @format
  * @flow strict-local
  */
+/** Hello */
 
 import React from 'react';
 import {
