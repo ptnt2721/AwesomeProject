@@ -118,24 +118,18 @@ const SignInScreen = ({ navigation }) => {
                     </TouchableOpacity>
                 </View>
                 <TouchableOpacity
-                        onPress={() => navigation.navigate('HomeScreen')}>
+                        onPress={() => navigation.navigate('Browse')}>
                         <Text style={{color: 'grey', marginTop:14}}> Quên mật khẩu ?</Text>
                 </TouchableOpacity>
                 <View style= { styles.button}>
                     <TouchableOpacity style={styles.signIn}
-                        onPress={() => navigation.navigate('HomeScreen')}>
+                        onPress={() => navigation.navigate('Browse')}>
                         <LinearGradient style={styles.signIn}
                                         colors={['#295097', '#295097']}>
                             <Text style= { [styles.textSign, {color:'#fff'}]}>Đăng nhập</Text>
                         </LinearGradient>
                     </TouchableOpacity>
                 </View>
-                
-                {/* <TouchableOpacity onPress={() =>navigation.navigate('ForgetPassScreen')}>
-                        <View style={styles.btnForgot}>
-                            <Text style={styles.textForgot}>Quên mật khẩu?</Text>
-                        </View>
-                    </TouchableOpacity> */}
             </Animatable.View>
         </View>
     )

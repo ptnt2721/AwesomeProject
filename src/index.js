@@ -11,6 +11,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import React, {Component} from 'react';
 import SplashScreen from './screens/SplashScreen';
 import SignInScreen from './screens/SignInScreen';
+import Browse from './screens/Browse';
 
 const Stack = createStackNavigator();
 
@@ -24,9 +25,9 @@ const App = () => {
         <Stack.Screen
           name="Splash"
           component={SplashScreen}
-          options={{ title: 'Welcome' }}
         />
         <Stack.Screen name="SignIn" component={SignInScreen} />
+        <Stack.Screen name="Browse" component={Browse} />
       </Stack.Navigator>
     </NavigationContainer>
   );
