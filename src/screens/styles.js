@@ -1,12 +1,11 @@
 import { StyleSheet } from "react-native";
-import { Colors } from "react-native/Libraries/NewAppScreen";
 
 const Styles = StyleSheet.create({
     container: {
         flex: 1,
         flexDirection: 'column',
         alignItems: 'center',
-        backgroundColor: Colors.white,
+        backgroundColor: '#FFFFFF',
     },
     containImage: {
         marginTop: 16,
@@ -14,7 +13,7 @@ const Styles = StyleSheet.create({
         justifyContent: 'center'
     },
     textMessage: {
-        marginTop: 16,
+        marginTop: 40,
         color: 'green',
         fontSize: 16,
     },
@@ -26,21 +25,23 @@ const Styles = StyleSheet.create({
     btnStyle: {
         height: 50,
         width: 200,
-        borderColor: Colors.primary,
+        borderColor: '#F44675',
         borderRadius: 5,
         borderWidth: 2,
-        justifyContent: 'center',
+        justifyContent: "center",
         alignItems: 'center',
         margin: 8
     },
     textAction: {
-        color: Colors.primary,
+        color: '#F44675',
         fontSize: 20,
         fontWeight: 'bold'
     },
     containerItem: {
         marginTop: 16,
         flexDirection: 'row',
-        alignItems: 'center'
+        alignItems: "center"
     }
-})
+});
+
+export default Styles;

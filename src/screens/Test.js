@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import {StyleSheet, Text, View, Button, TouchableOpacity, FlatList} from 'react-native';
+import {StyleSheet, Text,Image, View, Button, TouchableOpacity, FlatList} from 'react-native';
 import Styles from './styles';
-import { Colors } from "react-native/Libraries/NewAppScreen";
 
 export default class Test extends React.Component {
     //Header ung dung (tuy chon)
@@ -57,9 +56,9 @@ export default class Test extends React.Component {
 
     render(){
         return(
-            <View>
+            <View style={Styles.container}>
                 {/*Hien thi mot message len man hinh */}
-                <Text style={Styles.textMessage}> Welcome to React-Native</Text>,
+                <Text style={Styles.textMessage}> Welcome to React-Native</Text>
                 <View style={Styles.containImage}>
                     {/* Hien thi anh tu local resource */}
                     <Image 
@@ -91,7 +90,7 @@ export default class Test extends React.Component {
                 <FlatList 
                     data={this.state.listData}
                     renderItem={({ item }) => this.renderItem(item)}
-                    keyExtractor={(item,index) => index.toString}
+                    keyExtractor={(item,index) => index.toString()}
                 />
 
             </View>    
@@ -101,7 +100,7 @@ export default class Test extends React.Component {
     /* Hien thi chi tiet 1 item nhu the nao */
     renderItem(item){
         return (
-            <View style={Styles.containItem}>
+            <View style={Styles.containerItem}>
                 <Image 
                     style={Styles.imgLogo}
                     resizeMode={'contain'}
